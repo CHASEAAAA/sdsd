@@ -1,0 +1,17 @@
+while true do
+            local args = {
+                [1] = workspace.Worlds.Jungle.Scripted.FrisbeeArea
+            }
+            
+            game:GetService("ReplicatedStorage").Shared.RBXUtil.Net:FindFirstChild("RE/ThrowFrisbee"):FireServer(unpack(args))
+            
+            
+            local args = {
+                [1] = 6500,
+                [2] = Vector3.new(-400.37876892089844, 4.458342552185059, 867.978271484375)
+            }
+            
+            game:GetService("Players").LocalPlayer.RemoteEvent:FireServer(unpack(args))
+            
+            wait(0.000000000000000000000001)
+            end
